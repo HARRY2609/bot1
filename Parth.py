@@ -33,15 +33,7 @@ def command1(bot, message):
 @bot.on_message(filters.text & filters.private )
 def echobot(Client, message):
     message.reply_text(message.text)
-
-#welcome Bot
-GROUP = '🤖BOT'
-WELCOME_MESSAGE ="To kaise hai aap log? Chaliye Shuru krte hai bina kisi bakchodi ke..."
-
-@bot.on_message(filters.chat(GROUP)& filters.new_chat_members)
-def welcomebot(Client,message):
-    message.reply_text(WELCOME_MESSAGE)
-
+    
 @bot.on_message(filters.command('pic'))
 def command1(bot, message):
     bot.send_photo(message.chat.id,'https://www.google.com/url?sa=i&url=https%3A%2F%2Fnewsbeezer.com%2Fperueng%2Fdemon-slayer-who-is-tanjiro-kamado-the-protagonist-of-kimetsu-no-yaiba-guardian-of-the-night-anime-series-fame%2F&psig=AOvVaw3SvC7NzOyfcdKUK8MLbtFI&ust=1643722190300000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCMiOkcWM3PUCFQAAAAAdAAAAABAJ')
