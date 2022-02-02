@@ -6,9 +6,9 @@ bot = Client(
     api_hash="2a10c50d07c5a2a90b811eeebb45b79d",
     bot_token="5125346839:AAEg7k03YgVvDvaZEpF88Q86YL197s0JhnY"
 )
-@bot.on_message(filters.command('start'))
-def command1(bot, message):
-    message.reply_text('WTF do u want from me? LEAVE ME ALONE!!')
+#@bot.on_message(filters.command('start'))
+#def command1(bot, message):
+    #message.reply_text('WTF do u want from me? LEAVE ME ALONE!!')
 @bot.on_message(filters.command('help'))
 def command1(bot, message):
     message.reply_text('Go Help urself :|')
