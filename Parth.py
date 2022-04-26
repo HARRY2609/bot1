@@ -12,23 +12,6 @@ def command1(bot, message):
 @bot.on_message(filters.command('help'))
 def command1(bot, message):
     message.reply_text('Go Help urself :|')
-
-@bot.on_message(filters.command('mihir'))
-def command1(bot, message):
-    message.reply_text('Yedi Gand')
-
-@bot.on_message(filters.command('paras'))
-def command1(bot, message):
-    message.reply_text('Gandu')
-@bot.on_message(filters.command('vinay'))
-def command1(bot, message):
-    message.reply_text('Chutiya')
-@bot.on_message(filters.command('krishna'))
-def command1(bot, message):
-    message.reply_text('Bhosad')
-@bot.on_message(filters.command('parth'))
-def command1(bot, message):
-    message.reply_text('Pappa')
     #echobot
 @bot.on_message(filters.text & filters.private )
 def echobot(Client, message):
